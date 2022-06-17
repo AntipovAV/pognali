@@ -1,7 +1,7 @@
-# Личный проект «{{projectTitle}}» 
+# Личный проект «pognali»
 
-* Студент: [{{userName}}]({{userProfile}}).
-* Наставник: `Неизвестно`.
+* Alex Antipov
+
 
 ---
 
