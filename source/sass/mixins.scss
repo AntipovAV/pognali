@@ -1,0 +1,28 @@
+@mixin text($size: 16px, $line-height: 22px, $weight: 300, $color: #FFF) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin link {
+  display: inline-block;
+  width: 36%;
+  @include text(24px, 80px, 400, $color-darker);
+  background-color: $color-brightest;
+  padding-left: 30px;
+  margin-left: 40px;
+  border-radius: 20px;
+  position: relative;
+}
+
+@mixin triangle-small {
+  content: "";
+  display: inline-block;
+  background: url(../img/triangle-small.svg) no-repeat;
+  width: 14px;
+  height: 13.5px;
+  position: absolute;
+  top: 33px;
+  right: 30px;
+}

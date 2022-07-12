@@ -1,0 +1,54 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: $bloggersans;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-display: swap;
+  src: url("../fonts/bloggersans-bold.woff") format("woff"),
+  url("../fonts/bloggersans-bold.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-display: swap;
+  src: url("../fonts/bloggersans.woff") format("woff"),
+  url("../fonts/bloggersans.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-display: swap;
+  src: url("../fonts/bloggersans-light.woff") format("woff"),
+  url("../fonts/bloggersans-light.woff2") format("woff2");
+  font-weight: 200;
+}

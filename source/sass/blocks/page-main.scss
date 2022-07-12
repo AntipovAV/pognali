@@ -1,0 +1,88 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: $color-darkest url("../img/back-small.png") no-repeat;
+  background-position: 50% 0;
+}
+
+.page-main__title {
+  width: 248px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 98px;
+  margin: 0;
+}
+
+.page-main__pic {
+  padding-top: 9px;
+  margin-right: -32px;
+}
+
+.page-main__main-links-aside {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  top: 462px;
+}
+
+.page-main__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.page-main__routes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $color-light-basic;
+  padding-top: 100px;
+  margin-top: -50px;
+  z-index: 1;
+}
+
+@media (min-width: $medium-width) {
+  .page-main {
+    background: #192144 url("../img/back-medium.png") no-repeat;
+    background-position: 50% 390px;
+  }
+  .page-main__title {
+    width: 400px;
+    @include text(60px, 70px, 400);
+    padding-top: 160px;
+  }
+  .page-main__pic {
+    padding-top: 34px;
+    margin-right: -180px;
+  }
+  .page-main__main-links-aside {
+    display: none;
+  }
+}
+
+@media (min-width: $large-width) {
+  .page-main {
+    background: $color-darkest url("../img/back-large.png") no-repeat;
+    background-position: 50% 0;
+  }
+  .page-main__title {
+    width: 400px;
+    @include text(60px, 70px, 400);
+    padding-top: 190px;
+    padding-left: 150px;
+    text-align: left;
+    align-self: flex-start;
+  }
+  .page-main__pic {
+    position: absolute;
+    z-index: 3;
+    top: 80px;
+    right: 40%;
+  }
+}

@@ -1,0 +1,31 @@
+.routes__title {
+  @include text(24px, 24px, 400, $color-bright);
+  margin: 0;
+  padding-left: 15%;
+  letter-spacing: 1px;
+}
+
+.routes__text {
+  @include text(16px, 22px, 200, $color-dark);
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 15%;
+  padding-bottom: 30px;
+  width: 62%;
+}
+
+.routes__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 84.4%;
+}
+
+.routes__list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}

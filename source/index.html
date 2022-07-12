@@ -3,7 +3,284 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo logo" href="#">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/main-logo-full-large.png">
+          <source media="(min-width: 768px)" srcset="img/main-logo-full.png">
+          <img class="logo__img" src="../img/main-logo.svg" alt="Логотип: Погнали?" />
+        </picture>
+      </a>
+      <button class="page-header__toggle-menu"></button>
+      <div class="page-header__dash"></div>
+      <nav class="page-header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a class="navigation__list-link" href="#">О сервисе</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-link" href="form.html">Направления</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-link" href="catalog.html">Попутчики</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__header-links-aside header-links-aside">
+        <a class="header-links-aside__link-tel" href="tel:+78005558628">
+          <svg class="header-links-aside__icon-tel" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.77423 8.22389C9.77423 8.41289 9.92786 8.56139 10.1156 8.56139C10.5048 8.56139 10.8189 8.87526 10.8189 9.25664C10.8189 9.44226 10.9725 9.59414 11.1602 9.59414C11.348 9.59414 11.5016 9.44226 11.5016 9.25664C11.5016 8.50064 10.8803 7.88639 10.1156 7.88639C9.92786 7.88639 9.77423 8.03827 9.77423 8.22389ZM15.3319 9.59414C15.5231 9.59414 15.6733 9.44226 15.6733 9.25664C15.6733 6.22589 13.1812 3.76215 10.1156 3.76215C9.92786 3.76215 9.77423 3.914 9.77423 4.09965C9.77423 4.28527 9.92786 4.43715 10.1156 4.43715C12.8057 4.43715 14.9905 6.60051 14.9905 9.25664C14.9905 9.44226 15.1441 9.59414 15.3319 9.59414Z" fill="#161C35"/>
+          <path d="M12.9047 9.25661C12.9047 9.44223 13.0583 9.59411 13.2461 9.59411C13.4338 9.59411 13.5874 9.44223 13.5874 9.25661C13.5874 7.36324 12.0307 5.82424 10.1156 5.82424C9.92786 5.82424 9.77423 5.97612 9.77423 6.16174C9.77423 6.35074 9.92786 6.49924 10.1156 6.49924C11.6552 6.49924 12.9047 7.73786 12.9047 9.25661ZM10.1156 1.69998C9.92786 1.69998 9.77423 1.85186 9.77423 2.03748C9.77423 2.22312 9.92786 2.37498 10.1156 2.37498C13.9561 2.37498 17.0798 5.46312 17.0798 9.25661C17.0798 9.44223 17.23 9.59411 17.4211 9.59411C17.6089 9.59411 17.7625 9.44223 17.7625 9.25661C17.7625 5.0885 14.3316 1.69998 10.1156 1.69998ZM13.4509 12.8139L13.0037 13.0535C12.2492 13.4619 11.6621 14.5812 10.7311 13.7375L8.30007 11.3L6.2 9.25661C5.14491 7.92348 6.32631 7.60623 6.73936 6.85699L6.98175 6.41825C7.25485 5.91873 7.35384 5.35849 7.27191 4.79823C7.1934 4.23799 6.93737 3.72836 6.52771 3.32336C6.02931 2.83062 5.36703 2.56062 4.66038 2.56062C3.95372 2.56062 3.28802 2.83062 2.7896 3.32336L2.61552 3.49886C1.69379 4.41012 1.58796 5.97948 2.3151 7.92348C3.00126 9.77973 4.38386 11.7912 6.2 13.5867C8.96858 16.3239 12.0512 17.9 14.2634 17.9C15.1373 17.9 15.8781 17.6536 16.4038 17.1339L16.5813 16.9584C17.0763 16.469 17.3529 15.8142 17.3563 15.1089C17.3529 14.4204 17.0695 13.7454 16.5813 13.2627C15.7586 12.4494 14.4716 12.2671 13.4509 12.8139Z" fill="#161C35"/>
+          </svg>
+        </a>
+        <a class="header-links-aside__link-email" href="mailto:mail@htmlacademy.ru">
+          <svg class="header-links-aside__icon-email" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.01661 3.32528L8.76661 7.55572C8.99341 7.69747 9.28681 7.76467 9.58201 7.76467C9.87721 7.76467 10.1706 7.69747 10.3974 7.55572L17.1474 3.32528C17.5875 3.04913 18.0033 1.97498 17.196 1.97498H1.96891C1.16161 1.97498 1.57741 3.04913 2.01661 3.32528ZM17.3517 5.63842L10.3974 9.86677C10.0914 10.0537 9.87721 10.0757 9.58201 10.0757C9.28681 10.0757 9.07261 10.0537 8.76661 9.86677C8.46061 9.67987 2.34691 5.94082 1.84741 5.63737C1.49641 5.42317 1.50001 5.67412 1.50001 5.86732V13.525C1.50001 13.966 2.00941 14.575 2.40001 14.575H16.8C17.1906 14.575 17.7 13.966 17.7 13.525V5.86837C17.7 5.67517 17.7036 5.42422 17.3517 5.63842Z" fill="#161C35"/>
+          </svg>
+        </a>
+        <a class="header-links-aside__link-auth" href="#">Авторизация</a>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">В путешествие с крутыми попутчиками!</h1>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/traveller-illustration-large.png">
+        <source media="(min-width: 768px)" srcset="img/traveller-illustration-medium.png">
+        <img class="page-main__pic" src="../img/traveller-illustration-small.png" alt="Путешественник"/>
+      </picture>
+      <div class="page-main__main-links-aside main-links-aside">
+        <a class="main-links-aside__link-tel" href="tel:+78005558628">
+          <svg class="main-links-aside__icon-tel" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.77423 8.22389C9.77423 8.41289 9.92786 8.56139 10.1156 8.56139C10.5048 8.56139 10.8189 8.87526 10.8189 9.25664C10.8189 9.44226 10.9725 9.59414 11.1602 9.59414C11.348 9.59414 11.5016 9.44226 11.5016 9.25664C11.5016 8.50064 10.8803 7.88639 10.1156 7.88639C9.92786 7.88639 9.77423 8.03827 9.77423 8.22389ZM15.3319 9.59414C15.5231 9.59414 15.6733 9.44226 15.6733 9.25664C15.6733 6.22589 13.1812 3.76215 10.1156 3.76215C9.92786 3.76215 9.77423 3.914 9.77423 4.09965C9.77423 4.28527 9.92786 4.43715 10.1156 4.43715C12.8057 4.43715 14.9905 6.60051 14.9905 9.25664C14.9905 9.44226 15.1441 9.59414 15.3319 9.59414Z" fill="#161C35"/>
+          <path d="M12.9047 9.25661C12.9047 9.44223 13.0583 9.59411 13.2461 9.59411C13.4338 9.59411 13.5874 9.44223 13.5874 9.25661C13.5874 7.36324 12.0307 5.82424 10.1156 5.82424C9.92786 5.82424 9.77423 5.97612 9.77423 6.16174C9.77423 6.35074 9.92786 6.49924 10.1156 6.49924C11.6552 6.49924 12.9047 7.73786 12.9047 9.25661ZM10.1156 1.69998C9.92786 1.69998 9.77423 1.85186 9.77423 2.03748C9.77423 2.22312 9.92786 2.37498 10.1156 2.37498C13.9561 2.37498 17.0798 5.46312 17.0798 9.25661C17.0798 9.44223 17.23 9.59411 17.4211 9.59411C17.6089 9.59411 17.7625 9.44223 17.7625 9.25661C17.7625 5.0885 14.3316 1.69998 10.1156 1.69998ZM13.4509 12.8139L13.0037 13.0535C12.2492 13.4619 11.6621 14.5812 10.7311 13.7375L8.30007 11.3L6.2 9.25661C5.14491 7.92348 6.32631 7.60623 6.73936 6.85699L6.98175 6.41825C7.25485 5.91873 7.35384 5.35849 7.27191 4.79823C7.1934 4.23799 6.93737 3.72836 6.52771 3.32336C6.02931 2.83062 5.36703 2.56062 4.66038 2.56062C3.95372 2.56062 3.28802 2.83062 2.7896 3.32336L2.61552 3.49886C1.69379 4.41012 1.58796 5.97948 2.3151 7.92348C3.00126 9.77973 4.38386 11.7912 6.2 13.5867C8.96858 16.3239 12.0512 17.9 14.2634 17.9C15.1373 17.9 15.8781 17.6536 16.4038 17.1339L16.5813 16.9584C17.0763 16.469 17.3529 15.8142 17.3563 15.1089C17.3529 14.4204 17.0695 13.7454 16.5813 13.2627C15.7586 12.4494 14.4716 12.2671 13.4509 12.8139Z" fill="#161C35"/>
+          </svg>
+        </a>
+        <a class="main-links-aside__link-email" href="mailto:mail@htmlacademy.ru">
+          <svg class="main-links-aside__icon-email" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.01661 3.32528L8.76661 7.55572C8.99341 7.69747 9.28681 7.76467 9.58201 7.76467C9.87721 7.76467 10.1706 7.69747 10.3974 7.55572L17.1474 3.32528C17.5875 3.04913 18.0033 1.97498 17.196 1.97498H1.96891C1.16161 1.97498 1.57741 3.04913 2.01661 3.32528ZM17.3517 5.63842L10.3974 9.86677C10.0914 10.0537 9.87721 10.0757 9.58201 10.0757C9.28681 10.0757 9.07261 10.0537 8.76661 9.86677C8.46061 9.67987 2.34691 5.94082 1.84741 5.63737C1.49641 5.42317 1.50001 5.67412 1.50001 5.86732V13.525C1.50001 13.966 2.00941 14.575 2.40001 14.575H16.8C17.1906 14.575 17.7 13.966 17.7 13.525V5.86837C17.7 5.67517 17.7036 5.42422 17.3517 5.63842Z" fill="#161C35"/>
+          </svg>
+        </a>
+        <a class="main-links-aside__link-auth" href="#">Авторизация</a>
+      </div>
+      <section class="page-main__intro intro">
+        <q class="intro__quote">Лучшее приложение, что я видел в жизни!</q>
+        <p class="intro__text">Мурат Эльтазин главный редактор газеты <q>гаджетлайф</q></p>
+        <ul class="intro__list intro-list">
+          <li class="intro-list__item intro-list__item--first">
+            <p class="intro-list__item-text">Выберите направление</p>
+            <p class="intro-list__item-number">1</p>
+          </li>
+          <li class="intro-list__item intro-list__item--second">
+            <p class="intro-list__item-text">Изучите идеи путешественников</p>
+            <p class="intro-list__item-number">2</p>
+          </li>
+          <li class="intro-list__item intro-list__item--third">
+            <p class="intro-list__item-text">Находите тех, кто похож на вас</p>
+            <p class="intro-list__item-number">3</p>
+          </li>
+          <li class="intro-list__item intro-list__item--fourth">
+            <p class="intro-list__item-text">Путшествуйте вместе!</p>
+            <p class="intro-list__item-number">4</p>
+          </li>
+        </ul>
+        <aside class="intro__about intro-about">
+          <div class="intro-about__page-header page-header">
+            <a class="page-header__logo logo" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/main-logo-full-large-black.png">
+                <source media="(min-width: 768px)" srcset="img/main-logo-full.png">
+                <img class="logo__img" src="../img/main-logo.svg" alt="Логотип: Погнали?" />
+              </picture>
+            </a>
+            <button class="page-header__toggle-menu"></button>
+            <div class="page-header__dash page-header__dash--alternate-color"></div>
+            <nav class="page-header__navigation navigation">
+              <ul class="navigation__list">
+                <li class="navigation__list-item">
+                  <a class="navigation__list-link navigation__list-link--alternate-color" href="#">О сервисе</a>
+                </li>
+                <li class="navigation__list-item">
+                  <a class="navigation__list-link navigation__list-link--alternate-color" href="form.html">Направления</a>
+                </li>
+                <li class="navigation__list-item">
+                  <a class="navigation__list-link navigation__list-link--alternate-color" href="catalog.html">Попутчики</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="page-header__header-links-aside header-links-aside">
+              <a class="header-links-aside__link-tel" href="tel:+78005558628">
+                <svg class="header-links-aside__icon-tel" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.77423 8.22389C9.77423 8.41289 9.92786 8.56139 10.1156 8.56139C10.5048 8.56139 10.8189 8.87526 10.8189 9.25664C10.8189 9.44226 10.9725 9.59414 11.1602 9.59414C11.348 9.59414 11.5016 9.44226 11.5016 9.25664C11.5016 8.50064 10.8803 7.88639 10.1156 7.88639C9.92786 7.88639 9.77423 8.03827 9.77423 8.22389ZM15.3319 9.59414C15.5231 9.59414 15.6733 9.44226 15.6733 9.25664C15.6733 6.22589 13.1812 3.76215 10.1156 3.76215C9.92786 3.76215 9.77423 3.914 9.77423 4.09965C9.77423 4.28527 9.92786 4.43715 10.1156 4.43715C12.8057 4.43715 14.9905 6.60051 14.9905 9.25664C14.9905 9.44226 15.1441 9.59414 15.3319 9.59414Z" fill="#161C35"/>
+                <path d="M12.9047 9.25661C12.9047 9.44223 13.0583 9.59411 13.2461 9.59411C13.4338 9.59411 13.5874 9.44223 13.5874 9.25661C13.5874 7.36324 12.0307 5.82424 10.1156 5.82424C9.92786 5.82424 9.77423 5.97612 9.77423 6.16174C9.77423 6.35074 9.92786 6.49924 10.1156 6.49924C11.6552 6.49924 12.9047 7.73786 12.9047 9.25661ZM10.1156 1.69998C9.92786 1.69998 9.77423 1.85186 9.77423 2.03748C9.77423 2.22312 9.92786 2.37498 10.1156 2.37498C13.9561 2.37498 17.0798 5.46312 17.0798 9.25661C17.0798 9.44223 17.23 9.59411 17.4211 9.59411C17.6089 9.59411 17.7625 9.44223 17.7625 9.25661C17.7625 5.0885 14.3316 1.69998 10.1156 1.69998ZM13.4509 12.8139L13.0037 13.0535C12.2492 13.4619 11.6621 14.5812 10.7311 13.7375L8.30007 11.3L6.2 9.25661C5.14491 7.92348 6.32631 7.60623 6.73936 6.85699L6.98175 6.41825C7.25485 5.91873 7.35384 5.35849 7.27191 4.79823C7.1934 4.23799 6.93737 3.72836 6.52771 3.32336C6.02931 2.83062 5.36703 2.56062 4.66038 2.56062C3.95372 2.56062 3.28802 2.83062 2.7896 3.32336L2.61552 3.49886C1.69379 4.41012 1.58796 5.97948 2.3151 7.92348C3.00126 9.77973 4.38386 11.7912 6.2 13.5867C8.96858 16.3239 12.0512 17.9 14.2634 17.9C15.1373 17.9 15.8781 17.6536 16.4038 17.1339L16.5813 16.9584C17.0763 16.469 17.3529 15.8142 17.3563 15.1089C17.3529 14.4204 17.0695 13.7454 16.5813 13.2627C15.7586 12.4494 14.4716 12.2671 13.4509 12.8139Z" fill="#161C35"/>
+                </svg>
+              </a>
+              <a class="header-links-aside__link-email" href="mailto:mail@htmlacademy.ru">
+                <svg class="header-links-aside__icon-email" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.01661 3.32528L8.76661 7.55572C8.99341 7.69747 9.28681 7.76467 9.58201 7.76467C9.87721 7.76467 10.1706 7.69747 10.3974 7.55572L17.1474 3.32528C17.5875 3.04913 18.0033 1.97498 17.196 1.97498H1.96891C1.16161 1.97498 1.57741 3.04913 2.01661 3.32528ZM17.3517 5.63842L10.3974 9.86677C10.0914 10.0537 9.87721 10.0757 9.58201 10.0757C9.28681 10.0757 9.07261 10.0537 8.76661 9.86677C8.46061 9.67987 2.34691 5.94082 1.84741 5.63737C1.49641 5.42317 1.50001 5.67412 1.50001 5.86732V13.525C1.50001 13.966 2.00941 14.575 2.40001 14.575H16.8C17.1906 14.575 17.7 13.966 17.7 13.525V5.86837C17.7 5.67517 17.7036 5.42422 17.3517 5.63842Z" fill="#161C35"/>
+                </svg>
+              </a>
+              <a class="header-links-aside__link-auth" href="#">Авторизация</a>
+            </div>
+          </div>
+          <h2 class="intro-about__title">О сервисе</h2>
+          <p class="intro-about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p class="intro-about__text-2">А если найдете кого-то близкого по духу &mdash; скорее зовите в совместный трип!</p>
+          <a class="intro-about__link" href="#">Подробнее</a>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="../img/intro-about-pic-large.png">
+            <img  class="intro-about__picture" src="../img/intro-about-pic.png" alt="Дисплей смартфона">
+          </picture>
+        </aside>
+      </section>
+      <section class="page-main__routes routes">
+        <h2 class="routes__title">Направления</h2>
+        <p class="routes__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+        <ul class="routes__list">
+          <li class="routes__list-item routes-item">
+              <picture>
+                <img class="routes-item__pic" src="../img/thailand-small.jpg" alt="Фото Таиланда"/>
+              </picture>
+              <div class="routes-item__info">
+                <p class="routes-item__name">Таиланд</p>
+                <p class="routes-item__text">Джунгли зовут!</p>
+                <p class="routes-item__value">18321</p>
+              </div>
+              <img class="routes-item__flag" src="#" alt="Флаг" />
+          </li>
+          <li class="routes__list-item routes-item">
+            <div class="routes-item__country">
+              <p class="routes-item__name">Франция</p>
+              <p class="routes-item__text">Трэ бьен, манифик!</p>
+              <p class="routes-item__value">12518</p>
+              <img class="routes-item__flag" src="#" alt="Флаг" />
+            </div>
+          </li>
+          <li class="routes__list-item routes-item">
+            <div class="routes-item__country">
+              <p class="routes-item__name">Чехия</p>
+              <p class="routes-item__text">Закоулки старой Европы</p>
+              <p class="routes-item__value">5326</p>
+              <img class="routes-item__flag" src="#" alt="Флаг" />
+            </div>
+          </li>
+        </ul>
+        <a class="routes__link">Показать все</a>
+      </section>
+      <section class="page-main__fellow-travelers fellow-travelers">
+        <h2 class="fellow-travelers__title">Попутчики</h2>
+        <p class="fellow-travelers__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга</p>
+        <p class="fellow-travelers__text-2">Теперь можно легко найти единомышленников!</p>
+        <ul class="fellow-travelers__list">
+          <li class="fellow-travelers__list-item fellow-travelers-item">
+            <picture>
+            </picture>
+            <div class="fellow-travelers__level">
+            </div>
+            <p class="routes-item__name">Таня Фирсова</p>
+            <p class="routes-item__text">#ЗОЖ #ПП #пляж #авокадо #смузи</p>
+            <div class="fellow-travelers__flags">
+            </div>
+            <div class="fellow-travelers__icons">
+            </div>
+          </li>
+          <li class="fellow-travelers__list-item fellow-travelers-item">
+            <picture>
+            </picture>
+            <div class="fellow-travelers__level">
+            </div>
+            <p class="routes-item__name">Петя Демин</p>
+            <p class="routes-item__text">#бургер #бар #футбол #концерт #крафт</p>
+            <div class="fellow-travelers__flags">
+            </div>
+            <div class="fellow-travelers__icons">
+            </div>
+          </li>
+        </ul>
+        <a class="routes__link">Показать всех</a>
+      </section>
+      <section class="page-main__promo promo">
+        <h2 class="promo__title">Добавьте свой профиль</h2>
+        <img promo__pic="#" alt="иконка с рублем">
+        <ul class="promo__list promo-list">
+          <li class="promo-list__item">
+            <p class="promo-list__text">Базовое размещение</p>
+            <p class="promo-list__text-2">Бесплатно</p>
+            <div class="promo-list__number">1</div>
+          </li>
+          <li class="promo-list__item">
+            <p class="promo-list__text">Вывод на первых позициях</p>
+            <p class="promo-list__text-2">99 руб./мес</p>
+            <div class="promo-list__number">2</div>
+          </li>
+          <li class="promo-list__item">
+            <p class="promo-list__text">Кастомный цвет карточки</p>
+            <p class="promo-list__text-2">59 руб./месяц</p>
+            <div class="promo-list__number">3</div>
+          </li>
+        </ul>
+        <ul class="promo__list-2">
+          <li class="promo__list-2-item">Бесплатно</li>
+          <li class="promo__list-2-item">99 руб./мес</li>
+          <li class="promo__list-2-item">59 руб./мес</li>
+        </ul>
+        <a class="promo__link" href="#">Показать тарифы для бизнеса</a>
+      </section>
+      <section class="page-main__contacts contacts">
+        <h2 class="contacts__title">Заинтересовались?</h2>
+        <p class="contacts__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? тогда скорее <a class="contacts__link">авторизуйтесь.</a></p>
+        <form class="contacts__form email-form" action="index.html" method="post">
+          <label class="email-form__label">
+            <input class="email-form__input" type="text" name="email" value="E-mail">
+          </label>
+          <button class="email-form__submit" type="submit"></button>
+        </form>
+        <p class="contacts__text-2">Остались вопросы? <br class="contacts__text-2-transfer" /> Мы с радостью на них ответим!</p>
+        </p>
+        <a class="contacts__link-phone" href="tel: +74951234567">8 800 555-86-28</a>
+        <a class="contacts__link-email" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <aside class="contacts__address address">
+          <p class="address__text">ул. Большая конюшенная, 19/8</p>
+          <a class="contacts__link-route" href="#">Проложить маршрут</a>
+        </aside>
+      </section>
+      <div class="page-main__map map">
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo logo">
+        <p class="page-footer__logo-text">Погнали?</p>
+      </div>
+      <ul class="page-footer__socials socials-list">
+        <li class="socials-list__item socials-icon">
+          <a class="socials-icon__link-vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Vkontakte</span>
+            <svg class="socials-icon__vkontakte-image"></svg>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-list__item socials-icon">
+          <a class="socials-icon__link-telegram" href="https://t.me/s/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+            <svg class="socials-icon__telegram-image"></svg>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-list__item socials-icon">
+          <a class="socials-icon__link-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <span class="visually-hidden">Youtube</span>
+            <svg class="socials-icon__youtube-image"></svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__academy academy">
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <svg class="academy__logo"></svg>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

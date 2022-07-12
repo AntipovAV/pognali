@@ -1,0 +1,13 @@
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__list-link {
+  @include text(20px, 20px, 300);
+  text-transform: uppercase;
+}
+
+.navigation__list-link--alternate-color {
+  color: #192144;
+}
