@@ -1,4 +1,111 @@
 .routes-item__pic {
-  width: inherit;
-  object-fit: fill;
+  border-radius: 5% 5% 0 0;
+}
+
+.routes-item__info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 230px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding-top: 26px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-top: -15px;
+}
+
+.routes-item__info--padding-bottom-canceled {
+  padding-bottom: 0;
+}
+
+.routes-item__name {
+  @include text(21px, 21px, 400, #000000);
+  margin: 0;
+}
+
+.routes-item__value {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @include text(16px, 24px, 300, $color-darkest);
+  opacity: 30%;
+  margin: 0;
+}
+
+.routes-item__value::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/icon-user.svg) no-repeat;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+}
+
+.routes-item__text {
+  @include text(16px, 18px, 300, $color-dark);
+  opacity: 30%;
+  padding-bottom: 4px;
+  margin: 0;
+}
+
+.routes-item__flag {
+  position: absolute;
+  top: 86px;
+  left: 22px;
+}
+
+@media (min-width: $medium-width) {
+  .routes-item__pic {
+    border-radius: 0 20px 20px 0;
+  }
+  .routes-item__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 30px;
+    margin: 0;
+  }
+  .routes-item__name {
+    @include text(24px, 24px, 400, #000000);
+    margin-top: 30px;
+  }
+
+  .routes-item__value {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include text(20px, 20px, 300, $color-darkest);
+    opacity: 30%;
+    margin: 0;
+    padding-bottom: 21px;
+    order: 3;
+  }
+  .routes-item__value::before {
+    content: "";
+    display: inline-block;
+    background: url(../img/icon-user.svg) no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  .routes-item__text {
+    @include text(20px, 20px, 300, $color-dark);
+    opacity: 30%;
+    padding-bottom: 14px;
+    padding-top: 7px;
+    margin: 0;
+  }
+  .routes-item__flag {
+    position: absolute;
+    width: 70px;
+    top: 16px;
+    left: calc(100% - 220px);
+  }
 }

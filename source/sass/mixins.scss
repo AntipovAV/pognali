@@ -6,14 +6,14 @@
 }
 
 @mixin link {
-  display: inline-block;
-  width: 36%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   @include text(24px, 80px, 400, $color-darker);
   background-color: $color-brightest;
-  padding-left: 30px;
-  margin-left: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 20px;
-  position: relative;
 }
 
 @mixin triangle-small {
@@ -22,7 +22,6 @@
   background: url(../img/triangle-small.svg) no-repeat;
   width: 14px;
   height: 13.5px;
-  position: absolute;
   top: 33px;
   right: 30px;
 }

@@ -142,30 +142,42 @@
         <ul class="routes__list">
           <li class="routes__list-item routes-item">
               <picture>
+                <source media="(min-width: 768px)" srcset="../img/thailand-large.jpg">
                 <img class="routes-item__pic" src="../img/thailand-small.jpg" alt="Фото Таиланда"/>
               </picture>
               <div class="routes-item__info">
                 <p class="routes-item__name">Таиланд</p>
-                <p class="routes-item__text">Джунгли зовут!</p>
                 <p class="routes-item__value">18321</p>
+                <p class="routes-item__text">Джунгли зовут!</p>
               </div>
-              <img class="routes-item__flag" src="#" alt="Флаг" />
+            <picture>
+              <img class="routes-item__flag" src="../img/flag-thailand.svg" alt="Флаг" />
+            </picture>
+
           </li>
           <li class="routes__list-item routes-item">
-            <div class="routes-item__country">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/france-large.jpg">
+              <img class="routes-item__pic" src="../img/france-small.jpg" alt="Фото Франции"/>
+            </picture>
+            <div class="routes-item__info">
               <p class="routes-item__name">Франция</p>
-              <p class="routes-item__text">Трэ бьен, манифик!</p>
               <p class="routes-item__value">12518</p>
-              <img class="routes-item__flag" src="#" alt="Флаг" />
+              <p class="routes-item__text">Трэ бьен, манифик!</p>
+              <img class="routes-item__flag" src="../img/flag-france.svg" alt="Флаг" />
             </div>
           </li>
           <li class="routes__list-item routes-item">
-            <div class="routes-item__country">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/czech-large.jpg">
+              <img class="routes-item__pic" src="../img/czech-small.jpg" alt="Фото Чехии"/>
+            </picture>
+            <div class="routes-item__info routes-item__info--padding-bottom-canceled">
               <p class="routes-item__name">Чехия</p>
-              <p class="routes-item__text">Закоулки старой Европы</p>
               <p class="routes-item__value">5326</p>
-              <img class="routes-item__flag" src="#" alt="Флаг" />
+              <p class="routes-item__text">Закоулки старой Европы</p>
             </div>
+            <img class="routes-item__flag" src="../img/flag-czech.svg" alt="Флаг" />
           </li>
         </ul>
         <a class="routes__link">Показать все</a>
@@ -204,7 +216,7 @@
       </section>
       <section class="page-main__promo promo">
         <h2 class="promo__title">Добавьте свой профиль</h2>
-        <img promo__pic="#" alt="иконка с рублем">
+        <img class="promo__pic" src="#" alt="иконка с рублем">
         <ul class="promo__list promo-list">
           <li class="promo-list__item">
             <p class="promo-list__text">Базовое размещение</p>
@@ -239,7 +251,6 @@
           <button class="email-form__submit" type="submit"></button>
         </form>
         <p class="contacts__text-2">Остались вопросы? <br class="contacts__text-2-transfer" /> Мы с радостью на них ответим!</p>
-        </p>
         <a class="contacts__link-phone" href="tel: +74951234567">8 800 555-86-28</a>
         <a class="contacts__link-email" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         <aside class="contacts__address address">
@@ -259,14 +270,12 @@
           <a class="socials-icon__link-vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Vkontakte</span>
             <svg class="socials-icon__vkontakte-image"></svg>
-            </svg>
           </a>
         </li>
         <li class="socials-list__item socials-icon">
           <a class="socials-icon__link-telegram" href="https://t.me/s/htmlacademy">
             <span class="visually-hidden">Telegram</span>
             <svg class="socials-icon__telegram-image"></svg>
-            </svg>
           </a>
         </li>
         <li class="socials-list__item socials-icon">

@@ -43,8 +43,10 @@
   width: 100%;
   background-color: $color-light-basic;
   padding-top: 100px;
+  padding-bottom: 30px;
   margin-top: -50px;
   z-index: 1;
+  border-radius: 0 0 40px 40px;
 }
 
 @media (min-width: $medium-width) {
@@ -63,6 +65,13 @@
   }
   .page-main__main-links-aside {
     display: none;
+  }
+  .page-main__routes {
+    background: $color-light-basic url("../img/routes-back.png") no-repeat;
+    background-position-x: 92%;
+    background-position-y: 110px;
+    padding-bottom: 80px;
+    border-radius: 0 0 60px 60px;
   }
 }
 
@@ -84,5 +93,9 @@
     z-index: 3;
     top: 80px;
     right: 40%;
+  }
+  .page-main__routes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
