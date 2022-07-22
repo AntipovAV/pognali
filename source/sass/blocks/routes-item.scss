@@ -109,3 +109,13 @@
     left: calc(100% - 220px);
   }
 }
+
+@media (min-width: $large-width) {
+  .routes-item__inset-shadow {
+    width: 100%;
+    min-height: 140px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: -2px -92px 29px -38px rgba(237, 239, 246, 1) inset;
+  }
+}

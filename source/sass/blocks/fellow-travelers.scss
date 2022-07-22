@@ -1,0 +1,38 @@
+.fellow-travelers {
+  display: flex;
+  flex-direction: column;
+  background: #192144 url("../img/fellow-travelers-back.png") no-repeat;
+  background-position: 85% 30px;
+}
+
+.fellow-travelers__title {
+  width: 270px;
+  min-height: 100px;
+  @include text(24px, 24px, 400, $color-bright);
+  background: url("../img/fellow-travelers-title-back.svg") no-repeat;
+  padding-top: 30px;
+  padding-left: 50px;
+  margin-top: 26px;
+}
+
+.fellow-travelers__text {
+  width: calc(100% - 100px);
+  @include text(16px, 22px, 200, #FFFFFF);
+  align-self: center;
+  margin: 0;
+  margin-top: -80px;
+}
+
+.fellow-travelers__text-2 {
+  width: calc(100% - 100px);
+  @include text(16px, 22px, 400, #FFFFFF);
+  align-self: center;
+}
+
+.fellow-travelers__list {
+  background: url("../img/fellow-travelers-list-back.png") no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 36px;
+}
